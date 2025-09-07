@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "withernerf",
+	"version": "${version}",
+	"name": "WitherNerf",
+	"description": "The Wither doesnt beeline straight towards players, and can be evaded",
+	"authors": [
+		"Jamma003"
+	],
+	"license": "MIT",
+	"icon": "assets/WitherNerf/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jamma003.withernerf.WitherNerf"
+		]
+	},
+	"mixins": [
+		"withernerf.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
